@@ -17,9 +17,9 @@ function respuesta(num_pregunta, seleccionada){
     id="p" + num_pregunta;
 
     labels = document.getElementById(id).childNodes;
-    labels[3].style.backgroundsColor = "white";
-    labels[5].style.backgroundsColor = "white";
-    labels[7].style.backgroundsColor = "white";
+    labels[].style.backgroundsColor = "white";
+    labels[].style.backgroundsColor = "white";
+    labels[].style.backgroundsColor = "white";
    
     seleccionada.parentNodes.style.backgroundsColor = "#cec0fc";
 }
