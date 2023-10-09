@@ -3,171 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Indice</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body id="index">
+   <div id = cabecera>
+    <header >
         <h1>QUIZ GAME</h1>
         <p>¿Probamos que tal tu cultura general?</p>
+        <br><br>
+            <a class="comienza" href="form.html">COMIENZA</a>
+   </div>
     </header>
-    <form id="formulario">
-        <section id="p0">
-           <h3>1-¿Cuándo acabó la II Guerra Mundial?</h3>
-            <label>
-            <input type="radio" value="1" name="p0" onclick="respuesta(1,this)">1936.
-            </label> 
-            <label>
-            <input type="radio" value="2" name="p0"onclick="respuesta(1,this)">1943.
-            </label>
-            <label>
-            <input type="radio" value="3" name="p0"onclick="respuesta(1,this)">1945.
-            </label>
-            <label>
-            <input type="radio" value="4" name="p0"onclick="respuesta(1,this)">Cuando Raúl consiga terminar una Kata.
-            </label> 
-        </section>
-        <section id="p1">
-            <h3>2-¿En qué país nació Adolf Hitler?</h3>
-            <label>
-             <input type="radio" value="1" name="p1"onclick="respuesta(2,this)"> Alemania.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p1"onclick="respuesta(2,this)"> Austria.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p1"onclick="respuesta(2,this)"> En Chipiona.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p1"onclick="respuesta(2,this)"> Polonia.
-            </label> 
-         </section>
-         <section id="p2">
-            <h3>3-¿Cuál es la línea más larga del metro de Madrid?</h3>
-            <label>
-             <input type="radio" value="1" name="p2"onclick="respuesta(3,this)"> Instalarte la aplicación para comprar en las maquinas de la cafeteria.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p2"onclick="respuesta(3,this)"> La 9.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p2"onclick="respuesta(3,this)"> La 12. 
-            </label>
-            <label>
-             <input type="radio" value="4" name="p2"onclick="respuesta(3,this)"> La 1.
-            </label> 
-         </section>
-         <section id="p3">
-            <h3>4-¿En qué ciudad está el Atomium?</h3>
-            <label>
-             <input type="radio" value="1" name="p3"onclick="respuesta(4,this)"> Bruselas. 
-            </label>
-            <label>
-             <input type="radio" value="2" name="p3"onclick="respuesta(4,this)"> Vallecas.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p3"onclick="respuesta(4,this)"> Berlin.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p3"onclick="respuesta(4,this)"> Atomic city ¿Por qué te crees que se llama así?.
-            </label> 
-         </section>
-         <section id="p4">
-            <h3>5- ¿Cuál es el continente más extenso del planeta?</h3>
-            <label>
-             <input type="radio" value="1" name="p4"onclick="respuesta(5,this)"> Africa.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p4"onclick="respuesta(5,this)"> El PreWork.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p4"onclick="respuesta(5,this)"> America del Sur.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p4"onclick="respuesta(5,this)"> Asia. 
-            </label> 
-         </section>
-         <section id="p5">
-            <h3>6- ¿Cuántos huesos hay en el cuerpo humano?</h3>
-            <label>
-             <input type="radio" value="1" name="p5"onclick="respuesta(6,this)"> 205.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p5"onclick="respuesta(6,this)"> 203.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p5"onclick="respuesta(6,this)"> 204.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p5"onclick="respuesta(6,this)"> 206.
-            </label> 
-         </section>
-         <section id="p6">
-            <h3>¿Cómo se llama el proceso por el cual las plantas se alimentan?</h3>
-            <label>
-             <input type="radio" value="1" name="p6"onclick="respuesta(7,this)"> FotoZampa.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p6"onclick="respuesta(7,this)"> PhotoSixtensis.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p6"onclick="respuesta(7,this)"> Fotosíntesis.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p6"onclick="respuesta(7,this)"> Riega las plantas que las tienes más secas que un aleman madrugando.
-            </label> 
-         </section>
-         <section id="p8">
-            <h3>8- ¿Qué planeta es el que se encuentra más cercano al Sol?</h3>
-            <label>
-             <input type="radio" value="1" name="p7"onclick="respuesta(8,this)"> Mercurio.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p7"onclick="respuesta(8,this)" > Yo cuando enciendo el móvil de noche y está el brillo al tope.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p7"onclick="respuesta(8,this)"> Saturno.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p7"onclick="respuesta(8,this)"> Venus. 
-            </label> 
-         </section>
-         <section id="p8">
-            <h3>9- ¿Cuántos lados tiene un heptadecágono?</h3>
-            <label>
-             <input type="radio" value="1" name="p8"onclick="respuesta(9,this)"> 7.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p8"onclick="respuesta(9,this)"> 18.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p8"onclick="respuesta(9,this)"> 17.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p8"onclick="respuesta(9,this)"> Los que tú quieras mi rey.
-            </label> 
-         </section>
 
-         <section id="p9">
-            <h3>10- ¿Cuántos corazones tiene un pulpo?</h3>
-            <label>
-             <input type="radio" value="1" name="p9"onclick="respuesta(10,this)"> 1.
-            </label>
-            <label>
-             <input type="radio" value="2" name="p9"onclick="respuesta(10,this)"> 4.
-            </label>
-            <label>
-             <input type="radio" value="3" name="p9"onclick="respuesta(10,this)"> 8.
-            </label>
-            <label>
-             <input type="radio" value="4" name="p9"onclick="respuesta(10,this)"> 3.
-            </label> 
-         </section>
-<br><br>
-         <button onclick="corregir()">CORREGIR</button>
-        <h2>Aciertos: <span id="resultado"></span></h2>
-    </form>
-    <script src="script.js"></script>
 </body>
 </html>
 
