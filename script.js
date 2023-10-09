@@ -11,19 +11,20 @@ let cantidad_aciertos = 0;
 function respuesta(num_pregunta, seleccionada){
     // guardar respuesta
     opcion_elegida [num_pregunta] = seleccionada.value;
-}
+
     // maketar para que cambie el color de la seleccionada
 
-//     id="p" + num_pregunta;
+    // id="p" + num_pregunta;
 
-//     labels = document.getElementById(id).childNodes;
-//     labels[].style.backgroundsColor = "white";
-//     labels[].style.backgroundsColor = "white";
-//     labels[].style.backgroundsColor = "white";
+    // labels = document.getElementById(id).childNodes;
+    // labels[0].style.backgroundsColor = "white";
+    // labels[1].style.backgroundsColor = "white";
+    // labels[2].style.backgroundsColor = "white";
    
-//     // Dejar marcada la respuesta seleccionada
-//     seleccionada.parentNodes.style.backgroundsColor = "#cec0fc";
-// }
+    // Dejar marcada la respuesta seleccionada
+    // seleccionada.parentNodes.style.backgroundsColor = "#cec0fc";
+}
+
 
 // Funcion para ver las correctas
 function corregir(){
@@ -35,3 +36,8 @@ function corregir(){
     }
     document.getElementById("resultado").innerHTML = cantidad_aciertos;
 }
+
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+
+})
