@@ -1,14 +1,33 @@
+document
+        .getElementById("formulario")
+        .addEventListener("submit",function(event){
+
+        event.preventDefault();
+        
+         const p = event.target
+         console.log(event.target.p0.value);
+
+
+
+
+
+
+
+
+
 function verificarRespuestas(){
 
     let total = 10;
     let puntos = 0;
 
     let myForm = document.forms["formulario"];
+    console.log(myForm);
+
     let respuestas = ["c","b","c","a","d","d","c","a","c","d"];
 
     for(let i = 1; i <= total; i++){
         if(myForm["p"+ i].value === null || myForm["p"+ i].value === ""){
-                alert("Por favor, responde la pregunta" +i);
+                alert("Por favor, responde la pregunta " + i);
                 return false;
         }else{
             if(myForm["p" + i].value === respuestas[i - 1]){
@@ -19,9 +38,13 @@ function verificarRespuestas(){
     
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = '<h3>Obtuviste <span>'+ puntos +'</span>de<span>'+ total +'</span></h3>';
-    return false;
-
+    
+ 
+   
 }
+verificarRespuestas();
+});
+
 
 
 
