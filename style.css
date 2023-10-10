@@ -4,7 +4,7 @@
 
 }
 
-header{
+main{
     justify-items: auto;
     text-align: center;
     background: #000;
@@ -12,22 +12,11 @@ header{
     padding: 10px 0;
 }
 
-@media screen and (min-width: 768px){ 
-    #index{
-        padding: 200px;
-        border-radius: 7px;
-        cursor: pointer;
-        border: 1px dashed #ccc;
-        background-color: #000;
-        margin-bottom: 3px;
-    }
-}
-
-#index{
-    padding: 200px;
+#ind{
+    padding: 80px;
+    padding-top: 200px;
     border-radius: 7px;
     cursor: pointer;
-    border: 1px dashed #ccc;
     background-color: #000;
     margin-bottom: 3px;
 }
