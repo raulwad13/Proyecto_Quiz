@@ -3,47 +3,61 @@ document
         .addEventListener("submit",function(event){
 
         event.preventDefault();
-        
-         const p = event.target
-         console.log(event.target.p0.value);
 
+        const opcionElegida = [];
+        const parrafos = document.querySelectorAll("input");
+        console.log(parrafos);
 
-
-
-
-
-
-
-
-function verificarRespuestas(){
-
-    let total = 10;
-    let puntos = 0;
-
-    let myForm = document.forms["formulario"];
-    console.log(myForm);
-
-    let respuestas = ["c","b","c","a","d","d","c","a","c","d"];
-
-    for(let i = 1; i <= total; i++){
-        if(myForm["p"+ i].value === null || myForm["p"+ i].value === ""){
-                alert("Por favor, responde la pregunta " + i);
-                return false;
-        }else{
-            if(myForm["p" + i].value === respuestas[i - 1]){
-                puntos++;
-            }
+        for (let index = 0; index < parrafos.length - 1; index++) {
+            if(parrafos[index].checked)
+                {opcionElegida.push(parrafos[index].value)}
+            
         }
-    }
+
+        console.log(opcionElegida);
+         let correctas = ["c","b","c","a","d","d","c","a","c","d"];
+
+
+            cantidadAciertos = 0;
+            for(i=0; i < correctas.length; i++){
+                if(correctas[i]==opcionElegida[i]){
+                    cantidadAciertos++;
+
+                }
+            }
+            document.getElementById("resultado").innerHTML = cantidadAciertos;
+        })
+
+
+
+
+// function verificarRespuestas(){
+
+//     let total = 10;
+//     let puntos = 0;
+
+//     let myForm = document.forms["formulario"];
+//     console.log(myForm);
+
+//     for(let i = 1; i <= total; i++){
+//         if(myForm["p"+ i].value === null || myForm["p"+ i].value === ""){
+//                 alert("Por favor, responde la pregunta " + i);
+//                 return false;
+//         }else{
+//             if(myForm["p" + i].value === respuestas[i - 1]){
+//                 puntos++;
+//             }
+//         }
+//     }
     
-    let resultado = document.getElementById("resultado");
-    resultado.innerHTML = '<h3>Obtuviste <span>'+ puntos +'</span>de<span>'+ total +'</span></h3>';
+//     let resultado = document.getElementById("resultado");
+//     resultado.innerHTML = '<h3>Obtuviste <span>'+ puntos +'</span>de<span>'+ total +'</span></h3>';
     
  
    
-}
-verificarRespuestas();
-});
+// }
+// verificarRespuestas();
+// });
 
 
 
