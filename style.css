@@ -5,14 +5,25 @@
 }
 
 header{
+    justify-items: auto;
     text-align: center;
     background: #000;
     color: #fff;
     padding: 10px 0;
 }
 
-div{
-    display: block;
+@media screen and (min-width: 768px){ 
+    #index{
+        padding: 200px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: 1px dashed #ccc;
+        background-color: #000;
+        margin-bottom: 3px;
+    }
+}
+
+#index{
     padding: 200px;
     border-radius: 7px;
     cursor: pointer;
@@ -84,7 +95,7 @@ h2{
    text-align: center; 
 }
 
-#resultado{
+#aciertos{
     font-size: 30px;
     color: darkred;
 }
