@@ -48,6 +48,24 @@ section{
     display: none;
 } */
 
+/* Estilo para opciones seleccionadas */
+
+/* .opcion {
+  background-color: #eee;
+  color: #333;
+  padding: 5px;
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para opciones seleccionadas */
+
+/* .opcion.selected {
+  background-color: #4CAF50;
+  color: #fff;
+}  */
+
 label{
     display: block;
     padding: 7px;

@@ -1,3 +1,4 @@
+// Declarar el "submit" y las funciones.
 document
 .addEventListener("submit",function(event){
 
@@ -10,6 +11,8 @@ document
     const parrafos = document.querySelectorAll("input");
     console.log(parrafos);
 
+    // Declarar un for que recorra "parrafos" -1 para no tener en cuenta el "input corregir" y que pushe la opcion elegida en el array vacio.
+
     for (let index = 0; index < parrafos.length - 1; index++) {
         if(parrafos[index].checked)
             {opcionElegida.push(parrafos[index].value)}
@@ -17,15 +20,19 @@ document
     }
 
     console.log(opcionElegida);
-     let correctas = ["c","b","c","a","d","d","c","a","c","d"];
+    let correctas = ["c","b","c","a","d","d","c","a","c","d"];
 
-
-        cantidadAciertos = 0;
-        for(i=0; i < correctas.length; i++){
+    // Recorre el array "correctas" y en caso de la "opcionElegida" ser correcta suma un punto.
+    cantidadAciertos = 0;
+    for(i=0; i < correctas.length; i++){
             if(correctas[i]==opcionElegida[i]){
                 cantidadAciertos++;
 
             }
         }
+        if (opcionElegida.length < correctas.length) {
+     // Mostrar una alerta si faltan respuestas.
+            alert("Por favor, responde todas las preguntas antes de enviar el formulario...");
+        } else {
         document.getElementById("resultado").innerHTML = cantidadAciertos;
-    })
+    }})
